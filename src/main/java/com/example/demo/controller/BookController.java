@@ -25,6 +25,12 @@ public class BookController {
         return bookService.addBook(book);
     }
 
+    @PostMapping
+    @RequestMapping("/factory")
+    public Book addBookUsingBuilderAndFactory(@RequestBody Book book) {
+        return bookService.addBookUsingBuilderAndFactory(book);
+    }
+
     @GetMapping
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
