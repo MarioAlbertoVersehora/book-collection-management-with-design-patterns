@@ -27,7 +27,7 @@ public class BookFactory {
                 .pages(pages)
                 .build();
     }
-    public static Book createBookWithTitleAndAuthorPages(String title, String author) {
+    public static Book createBookWithTitleAndAuthor(String title, String author) {
         return new Book.Builder()
                 .title(title)
                 .author(author)
